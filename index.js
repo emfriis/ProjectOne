@@ -42,9 +42,9 @@ function checkRequired(inputArr) {
 // Check input length
 function checkLength(input, min, max) {
     if (input.value.length < min) {
-        showError(input, `${getFieldName(input)} must be at least ${min} characters`);\
+        showError(input, `${getFieldName(input)} must be at least ${min} characters`);
     } else if (input.value.length > max) {
-        showError(input, `${getFieldName(input)} must be less than ${max} characters`);\
+        showError(input, `${getFieldName(input)} must be less than ${max} characters`);
     } else {
         showSuccess(input);
     }
@@ -59,7 +59,7 @@ function checkPasswordMatch(input1, input2) {
 
 // Get fieldeame
 function getFieldname(input) { 
-    return input.id.charAt(0).toUpperCase() + input.id.slice(1); 
+    return input.id.charAt(0).toUpperCase() + input.id.slice(1); // Returns name of required field with first letter Uppercase.
 }
 
 // Event Listeners
